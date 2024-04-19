@@ -59,7 +59,6 @@ body {
     line-height: 1.25em;
     margin-bottom: .25em;
     margin-inline: 33px;
-    word-break: break-word
 }
 
 .content p {
@@ -73,6 +72,11 @@ body {
     bottom: 44px;
     position: absolute;
     width: calc(100% - 40px)
+}
+
+.logo {
+    margin-top: -10%;
+    width: 50%;
 }
 
 @media screen and (max-width: 767px) {
@@ -90,5 +94,10 @@ body {
 
     .content .line-break {
         display: block
+    }
+
+    .logo {
+        margin-top: -10%;
+        width: 80%;
     }
 }
