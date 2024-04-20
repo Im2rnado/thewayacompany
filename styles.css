@@ -1,15 +1,19 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
 }
 
 body {
-    background-color: #000;
+    background-color: #1c1c1c;
     min-height: 100vh;
-    overflow: hidden;
     padding: 20px;
-    width: 100vw
 }
 
 .align-content-center-vertical {
@@ -22,43 +26,33 @@ body {
     text-align: center
 }
 
-.cover {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1
-}
-
-.cover img {
-    height: 100vh;
-    object-fit: cover;
-    width: 100vw
-}
-
-.squarespace-logo {
-    left: 20px;
-    position: absolute;
-    top: 20px
-}
-
-.squarespace-logo a {
-    display: inline-block
-}
-
 .content {
     color: #fff;
     font-family: Montserrat, Helvetica, Arial, sans-serif
 }
 
 .content h1 {
+    font-weight: bolder;
     display: inline-block;
     font-size: 39px;
     font-weight: 100;
     line-height: 1.25em;
     margin-bottom: .25em;
     margin-inline: 33px;
+}
+
+.content h2 {
+    color: #20E8FE;
+}
+
+.content h3 {
+    text-align: justify;
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: inline-block;
+    font-weight: 300;
+    line-height: 1.4em
 }
 
 .content p {
@@ -78,13 +72,28 @@ body {
     width: 30%;
 }
 
+#under-construction {
+    position: fixed;
+    top: -4.3%;
+    left: 0;
+    width: 22%;
+    z-index: 1000;
+}
+
 @media screen and (max-width: 767px) {
-    .squarespace-logo {
-        left: 50%
+    .content h1 {
+        font-size: 26px;
     }
 
-    .content h1 {
-        font-size: 28px
+    .content h2 {
+        font-size: 22px;
+    }
+
+    .content h3 {
+        font-size: 17px;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .content p {
@@ -96,7 +105,11 @@ body {
     }
 
     .logo {
-        margin-top: -10%;
         width: 80%;
+    }
+
+    #under-construction {
+        top: -2%;
+        width: 40%;
     }
 }
