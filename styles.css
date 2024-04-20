@@ -82,7 +82,8 @@ body {
 
 @media screen and (max-width: 767px) {
     .content h1 {
-        font-size: 26px;
+        font-size: 22px;
+        margin: 0
     }
 
     .content h2 {
